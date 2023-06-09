@@ -1,0 +1,39 @@
+<!--Cabecera de la pagina-->
+<mat-toolbar class="cabecera" >
+
+  <mat-icon class="icono" fontIcon="school"></mat-icon>
+
+  <span class="banner">Universidad <p>Comunitaria</p></span>
+
+<!--Enlaces del banner-->
+  <div class="espacio"></div>
+  <span class="banner2"> <a href="http://localhost:4200/Pagina_inicio">Inicio</a> </span>
+
+  <div class="espacio"></div>
+  <span class="banner2"> <a href="http://localhost:4200/Quienes_somos">Quienes somos</a> </span>
+
+  <div class="espacio"></div>
+  <span class="banner2"> <a href="http://localhost:4200/Citas_medicas">Oferta academica</a> </span>
+
+  <div class="espacio"></div>
+  <span class="banner2"> <a href="http://localhost:4200/Contactos">Contactos</a> </span>
+
+  <div class="espacio"></div>
+
+  <div *ngIf="1 !== sharedService.getTemp()">
+    <button mat-icon-button class="icono_inicio_sesion" (click)="inicioSesion()">
+      <mat-icon>account_box</mat-icon>
+    </button>
+  </div>
+
+  <div *ngIf="1 === sharedService.getTemp()">
+    <div class="nombre-usuario-container">
+    <span class="nombre_usuario">Bienvenido <br> Usuario</span>
+    <div class="espacio"></div>
+    <button mat-button class="boton_cerrar_sesion" (click)="cerrarSesion()">
+      Cerrar sesion
+    </button>
+  </div>
+  </div>
+  
+</mat-toolbar>
