@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-Pagina_estudiante',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pagina_estudianteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
 
   ngOnInit() {
+  }
+
+
+  ver_horario_estudiante(){
+
+    this.router.navigate(['/Horario_estudiante']);//Me envia a la ruta horario_estudiante
   }
 
 }

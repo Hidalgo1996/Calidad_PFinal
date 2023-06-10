@@ -24,12 +24,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { SharedService } from './Service/shared.service';
+import { Busqueda_dniComponent } from './Busqueda_dni/Busqueda_dni.component';
+import { Horario_estudianteComponent } from './Horario_estudiante/Horario_estudiante.component';
 
 
 
 
 @NgModule({
-  declarations: [							
+  declarations: [									
     AppComponent,
       LoginComponent,
       Pagina_docenteComponent,
@@ -37,7 +39,8 @@ import { SharedService } from './Service/shared.service';
       FooterComponent,
       CabeceraComponent,
       Pagina_inicialComponent,
-      
+      Busqueda_dniComponent,
+      Horario_estudianteComponent
    ],
 
   imports: [

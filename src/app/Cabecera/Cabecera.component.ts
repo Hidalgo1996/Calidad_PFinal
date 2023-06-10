@@ -27,7 +27,7 @@ export class CabeceraComponent implements OnInit {
   
   cerrarSesion(){
     this.sharedService.setTemp(2);
-    this.router.navigate(['/Pagina_inicio']);
+    this.router.navigate(['/Pagina_inicial']);
 
   }
 

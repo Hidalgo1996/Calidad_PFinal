@@ -1,9 +1,12 @@
+import { Busqueda_dniComponent } from './../Busqueda_dni/Busqueda_dni.component';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { Validators } from '@angular/forms';
 import { SharedService } from '../Service/shared.service';
+
 
 @Component({
   selector: 'app-Login',
@@ -12,7 +15,7 @@ import { SharedService } from '../Service/shared.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>, public sharedService: SharedService) { }
+  constructor(private dialog: MatDialog, private router: Router, private dialogRef: MatDialogRef<LoginComponent>, public sharedService: SharedService) { }
 
   alert: boolean = false;
 
@@ -37,15 +40,15 @@ export class LoginComponent implements OnInit {
     if (this.usuarioLogin.value.usuario== "kevin" && this.usuarioLogin.value.password=="123") {
 
       this.sharedService.temp = 1;
-      this.router.navigate(['/']);//Me envia a la ruta cliente
+      this.router.navigate(['/Pagina_estudiante']);//Me envia a la ruta cliente
       this.dialogRef.close();//cierra ventana
       
     } 
 
-    if (this.usuarioLogin.value.usuario== "Carlos" && this.usuarioLogin.value.password=="123") {
+    if (this.usuarioLogin.value.usuario== "Carlos" && this.usuarioLogin.value.password=="12345") {
       
       this.sharedService.temp = 1;
-      this.router.navigate(['/']);//Me envia a la ruta cliente
+      this.router.navigate(['/Pagina_docente']);//Me envia a la ruta cliente
       this.dialogRef.close();//cierra ventana
       
     } else {
@@ -53,6 +56,15 @@ export class LoginComponent implements OnInit {
       this.alert= true;
       setTimeout(() => this.alert= false, 4000);
     }
+  }
+
+
+  /**
+   * Metodo de login
+   */
+  busquedaDni(){
+
+    this.dialog.open(Busqueda_dniComponent)
   }
 
 }
