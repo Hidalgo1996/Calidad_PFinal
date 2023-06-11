@@ -1,0 +1,67 @@
+
+.nombre_curso{
+
+    margin-top: 2%;
+    margin-left: 2%;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.botones_docente .horario{
+
+    margin-left: 6%;
+    margin-top: 5%;
+    width: 13%;
+    display: block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+button{
+    border-radius: 8%;
+    background-color: rgba(60, 182, 148, 0.859);
+    box-shadow: 1px 2px 1px;
+}
+
+
+
+.botones_docente .salario{
+
+    margin-left: 6%;
+    margin-top: 1%;
+    width: 13%;
+    display: block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botones_docente .ficha_datos{
+
+    margin-left: 6%;
+    margin-top: 1%;
+    margin-bottom: 25%;
+    width: 13%;
+    display: block;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Cambio de color de los botones*/
+.botones_docente .horario:hover{
+
+    background-color: orange;
+}
+
+.botones_docente .salario:hover{
+
+    background-color: orange;
+}
+
+.botones_docente .ficha_datos:hover{
+
+    background-color: orange;
+}

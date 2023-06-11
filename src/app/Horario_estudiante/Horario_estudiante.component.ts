@@ -76,9 +76,6 @@ export class Horario_estudianteComponent implements OnInit {
   constructor(private router: Router, private dialog: MatDialog) {
 
     this.nav = this.router.getCurrentNavigation();
-
-
-
   };
 
 
@@ -88,11 +85,10 @@ export class Horario_estudianteComponent implements OnInit {
   }
 
 
+  regresar_pagina_estudiante(){
 
-
-
-
-
+    this.router.navigate(['/Pagina_estudiante']);//Me envia a la ruta pagina_estudiante
+  }
 
 
 }

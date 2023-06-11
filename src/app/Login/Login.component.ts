@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
       
     } 
 
-    if (this.usuarioLogin.value.usuario== "Carlos" && this.usuarioLogin.value.password=="12345") {
+    if (this.usuarioLogin.value.usuario== "carlos" && this.usuarioLogin.value.password=="12345") {
       
       this.sharedService.temp = 1;
       this.router.navigate(['/Pagina_docente']);//Me envia a la ruta cliente

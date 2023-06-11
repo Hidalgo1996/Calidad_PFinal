@@ -1,6 +1,6 @@
 
 
-.horario_estudiante{
+.ficha_estudiante{
 
     display: flex;
     align-items:center;
@@ -16,19 +16,36 @@
     text-shadow: 2px 2px 2px gray;
 }
 
-table {
-    width: 100%;
-    background-color: rgba(167, 230, 218, 0.749);
-  }
 
-  th{
+.datos{
 
+    margin-left: 2%;
+}
+
+
+img{
+
+    width: 300px;
+    height: 200px;
+    margin-bottom: 3%;
+    border: solid 2px black;
+    box-shadow: 1px 1px 2px;
+}
+
+h2{
+    font-size: 1rem;
     font-weight: bold;
+}
+
+.texto{
+
+    font-weight: none;
     font-family: sans-serif;
     font-size: 0.8rem;
-  }
+    color: rgb(0, 0, 0);
+}
 
-  button{
+button{
 
     margin-bottom: 2%;
     border-radius: 12%;
@@ -39,9 +56,9 @@ table {
     font-size: 0.7rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+}
 
-  button:hover{
+button:hover{
 
     background-color: orange;
   }

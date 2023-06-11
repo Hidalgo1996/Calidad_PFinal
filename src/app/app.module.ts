@@ -26,12 +26,17 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { SharedService } from './Service/shared.service';
 import { Busqueda_dniComponent } from './Busqueda_dni/Busqueda_dni.component';
 import { Horario_estudianteComponent } from './Horario_estudiante/Horario_estudiante.component';
+import { Calificaciones_estudianteComponent } from './Calificaciones_estudiante/Calificaciones_estudiante.component';
+import { Perfil_estudianteComponent } from './Perfil_estudiante/Perfil_estudiante.component';
+import { Remuneracion_docenteComponent } from './Remuneracion_docente/Remuneracion_docente.component';
+import { Horario_docenteComponent } from './Horario_docente/Horario_docente.component';
+import { Perfil_docenteComponent } from './Perfil_docente/Perfil_docente.component';
 
 
 
 
 @NgModule({
-  declarations: [									
+  declarations: [														
     AppComponent,
       LoginComponent,
       Pagina_docenteComponent,
@@ -40,7 +45,12 @@ import { Horario_estudianteComponent } from './Horario_estudiante/Horario_estudi
       CabeceraComponent,
       Pagina_inicialComponent,
       Busqueda_dniComponent,
-      Horario_estudianteComponent
+      Horario_estudianteComponent,
+      Calificaciones_estudianteComponent,
+      Perfil_estudianteComponent,
+      Remuneracion_docenteComponent,
+      Horario_docenteComponent,
+      Perfil_docenteComponent
    ],
 
   imports: [

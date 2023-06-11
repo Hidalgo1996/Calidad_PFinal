@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-Pagina_estudiante',
@@ -21,6 +19,16 @@ export class Pagina_estudianteComponent implements OnInit {
   ver_horario_estudiante(){
 
     this.router.navigate(['/Horario_estudiante']);//Me envia a la ruta horario_estudiante
+  }
+
+  ver_calificaciones_estudiante(){
+
+    this.router.navigate(['/Calificaciones_estudiante']);//Me envia a la ruta calificaciones_estudiante
+  }
+
+  ver_perfil_estudiante(){
+
+    this.router.navigate(['/Perfil_estudiante']);//Me envia a la ruta perfil_estudiante
   }
 
 }

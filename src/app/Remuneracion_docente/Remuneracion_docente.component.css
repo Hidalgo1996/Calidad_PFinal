@@ -1,6 +1,6 @@
 
 
-.horario_estudiante{
+.remuneracion_docente{
 
     display: flex;
     align-items:center;
@@ -12,23 +12,48 @@
     font-family: sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: black;
+    color: rgb(15, 18, 56);
     text-shadow: 2px 2px 2px gray;
 }
 
-table {
-    width: 100%;
-    background-color: rgba(167, 230, 218, 0.749);
-  }
 
-  th{
+.datos{
 
+    margin-left: 2%;
+    font-family: sans-serif;
+}
+
+.caja_titulos{
+
+    font-family: sans-serif;
+}
+
+.sueldo{
+
+    margin-left: 5%;
+}
+
+.sueldo h3{
+
+    font-family: sans-serif;
     font-weight: bold;
+}
+
+
+h2{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.texto{
+
+    font-weight: none;
     font-family: sans-serif;
     font-size: 0.8rem;
-  }
+    color: rgb(0, 0, 0);
+}
 
-  button{
+button{
 
     margin-bottom: 2%;
     border-radius: 12%;
@@ -39,9 +64,9 @@ table {
     font-size: 0.7rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+}
 
-  button:hover{
+button:hover{
 
     background-color: orange;
   }
