@@ -1,11 +1,37 @@
 
-<div class="nombre_curso">Nombre del curso</div>
-
+<!-- <div class="nombre_curso">Nombre del curso</div>
 
 <div class="botones_docente">
-
   <button class="horario" (click)="ver_horario_docente()">Horario (Clases) <mat-icon>schedule</mat-icon></button>
   <button class="salario" (click)="ver_salario()">Salario <mat-icon>monetization_on</mat-icon></button>
   <button class="ficha_datos" (click)="ver_perfil_docente()">Perfil <mat-icon>assignment_ind</mat-icon></button>
   
+</div> -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <!-- Contenido del menu -->
+      <div class="nombre_curso">Nombre del curso</div>
+      <div class="botones_docente">
+
+        <button class="horario" (click)="ver_horario_docente()">Horario (Clases) <mat-icon>schedule</mat-icon></button>
+
+        <button class="salario" (click)="ver_salario()">Salario <mat-icon>monetization_on</mat-icon></button>
+
+        <button class="ficha_datos" (click)="ver_perfil_docente()">Perfil <mat-icon>assignment_ind</mat-icon></button>
+
+      </div>
+    </div>
+
+    <div class="col-md-8">
+
+      <!-- Contenido de las vistas -->
+      <app-Horario_docente *ngIf="mostrarHorario"></app-Horario_docente>
+      <app-Remuneracion_docente *ngIf="mostrarSalario"></app-Remuneracion_docente>
+      <app-Perfil_docente *ngIf="mostrarPerfil"></app-Perfil_docente>
+
+    </div>
+
+  </div>
 </div>

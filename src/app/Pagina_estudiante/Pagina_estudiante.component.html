@@ -1,12 +1,36 @@
-
-<div class="nombre_curso">Nombre del curso</div>
-
+<!-- <div class="nombre_curso">Nombre del curso</div>
 
 <div class="botones_estudiante">
-
   <button class="horario" (click)="ver_horario_estudiante()">Horarios(semestres) <mat-icon>today</mat-icon></button>
   <button class="calificaciones" (click)="ver_calificaciones_estudiante()">Calificaciones <mat-icon>assignment</mat-icon></button>
   <button class="ficha_datos" (click)="ver_perfil_estudiante()">Perfil <mat-icon>assignment_ind</mat-icon></button>
   
-</div>
+</div> -->
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <!-- Contenido del menu -->
+      <div class="nombre_curso">Nombre del curso</div>
+      <div class="botones_estudiante">
+
+        <button class="horario" (click)="ver_horario_estudiante()">Horarios(semestres) <mat-icon>today</mat-icon></button>
+
+        <button class="calificaciones" (click)="ver_calificaciones_estudiante()">Calificaciones <mat-icon>assignment</mat-icon></button>
+
+        <button class="ficha_datos" (click)="ver_perfil_estudiante()">Perfil <mat-icon>assignment_ind</mat-icon></button>
+
+      </div>
+    </div>
+
+    <div class="col-md-8">
+
+      <!-- Contenido de las vistas -->
+      <app-Horario_estudiante *ngIf="mostrarHorario"></app-Horario_estudiante>
+      <app-Calificaciones_estudiante *ngIf="mostrarCalificaciones"></app-Calificaciones_estudiante>
+      <app-Perfil_estudiante *ngIf="mostrarPerfil"></app-Perfil_estudiante>
+
+    </div>
+    
+  </div>
+</div>
