@@ -11,9 +11,8 @@
 
 .botones_estudiante .horario{
 
-    margin-left: 2%;
+    margin-left: 0%;
     margin-top: 5%;
-    width: 15%;
     display: block;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,26 +24,23 @@ button{
     border-radius: 8%;
     background-color: rgba(60, 182, 148, 0.859);
     box-shadow: 1px 2px 1px;
+    width: 175px;
 }
 
 
 
 .botones_estudiante .calificaciones{
-
-    margin-left: 2%;
+    margin-left: 0%;
     margin-top: 1%;
-    width: 15%;
     display: block;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .botones_estudiante .ficha_datos{
-
-    margin-left: 2%;
+    margin-left: 0%;
     margin-top: 1%;
     margin-bottom: 25%;
-    width: 15%;
     display: block;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -65,4 +61,7 @@ button{
 .botones_estudiante .ficha_datos:hover{
 
     background-color: orange;
+}
+.contenido_vistas{
+    width: 100px;
 }

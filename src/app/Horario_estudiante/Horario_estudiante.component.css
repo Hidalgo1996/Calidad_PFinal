@@ -1,47 +1,45 @@
+.horario_estudiante {
 
-
-.horario_estudiante{
-
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    max-width: 2560px;
-    min-width: 850px;
-    margin: 0 auto;
-    margin-top: 3%;
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-    text-shadow: 2px 2px 2px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 2560px;
+  min-width: 850px;
+  margin: 0 auto;
+  margin-top: 3%;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 2px gray;
 }
 
 table {
-    width: 100%;
-    background-color: rgba(167, 230, 218, 0.749);
-  }
+  width: 100%;
+  background-color: rgba(167, 230, 218, 0.749);
+}
 
-  th{
+th {
 
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 0.8rem;
-  }
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
 
-  button{
+button {
 
-    margin-bottom: 2%;
-    border-radius: 12%;
-    box-shadow: 2px 2px 2px black;
-    border: none;
-    background-color: rgba(20, 168, 254, 0.954);
-    color: white;
-    font-size: 0.7rem;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+  margin-bottom: 2%;
+  border-radius: 12%;
+  box-shadow: 2px 2px 2px black;
+  border: none;
+  background-color: rgba(20, 168, 254, 0.954);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-  button:hover{
+button:hover {
 
-    background-color: orange;
-  }
+  background-color: orange;
+}

@@ -24,7 +24,7 @@ export class Pagina_docenteComponent implements OnInit {
 
   ver_salario(){
     this.mostrarSalario = true;
-    this. mostrarHorario = false;
+    this.mostrarHorario = false;
     this.mostrarPerfil = false;
   }
 
