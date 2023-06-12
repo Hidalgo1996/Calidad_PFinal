@@ -1,31 +1,80 @@
-
 <div class="ficha_estudiante">
 
   <p>
-   Ficha de datos del estudiante
+    Ficha de datos del estudiante
   </p>
 </div>
 
 
-<button (click)="regresar_pagina_estudiante()">↩Regresar al menu</button>
 
-<div class="datos">
-  <h2>Foto perfil:</h2>
-  <img src="https://d500.epimg.net/cincodias/imagenes/2016/07/04/lifestyle/1467646262_522853_1467646344_noticia_normal.jpg" >
-  <h2>Cedula de identidad:</h2>
-  <p class="texto">094039402</p>
-  <h2>Nombres: </h2>
-  <p class="texto">Carlos Eduardo</p>
-  <h2>Apellidos: </h2>
-  <p class="texto">Macias Quezada</p>
-  <h2>Edad: </h2>
-  <p class="texto">23 años</p>
-  <h2>Direccion domiciliaria: </h2>
-  <p>Urdesa</p>
-  <h2>Correo: </h2>
-  <p class="texto">eduard23_do@hotmail.com</p>
-  <h2>Telefono: </h2>
-  <p class="texto">2-348576</p>
-  <h2>Nivel educativo: </h2>
-  <p class="texto">Medio</p>
+
+<div class="container">
+  
+  <div class="datos">
+    <div class="boton">
+      <button type="button" class="btn btn-info" (click)="regresar_pagina_estudiante()"><i class="bi bi-arrow-left"></i> Regresar al menu</button>
+    </div><br>
+    <div class="row">
+      <div class="col-md-6 mb-sm-0">
+        <div class="card mb-2" style="width: 25rem;">
+          <div class="card-body" style="text-align: center;">
+            <h4 class="card-title" style="text-align: left;"><strong> Foto perfil:</strong></h4>
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="card mb-2" style="width: 25rem;">
+          <div class="card-body">
+            <h4 class="card-title"><strong> Cedula de identidad:</strong></h4>
+            <p class="card-text"> 094039402</p>
+          </div>
+        </div>
+        <div class="card mb-2" style="width: 25rem;">
+          <div class="card-body">
+            <h4 class="card-title"><strong> Nombre:</strong></h4>
+            <p class="card-text"> Carlos Eduardo</p>
+          </div>
+        </div>
+      </div>
+   
+    <div class="col-md-6" style="text-align: left;">
+      <div class="card mb-2" style="width: 25rem;">
+        <div class="card-body">
+          <h4 class="card-title"><strong> Apellidos:</strong></h4>
+          <p class="card-text"> Macias Quezada</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 25rem;">
+        <div class="card-body">
+          <h4 class="card-title"><strong> Edad:</strong></h4>
+          <p class="card-text"> 23 años</p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 25rem;">
+        <div class="card-body">
+          <h4 class="card-title"><strong> Direccion domiciliaria:</strong></h4>
+          <p class="card-text"> Urdesa <i class="bi bi-pencil-square"></i></p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 25rem;">
+        <div class="card-body">
+          <h4 class="card-title"><strong> Correo eletrónico:</strong></h4>
+          <p class="card-text"> Urdesa <i class="bi bi-pencil-square"></i></p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 25rem;">
+        <div class="card-body">
+          <h4 class="card-title"><strong> Telefono:</strong></h4>
+          <p class="card-text"> 2-348576 <i class="bi bi-pencil-square"></i></p>
+        </div>
+      </div>
+      <div class="card mb-2" style="width: 25rem;">
+        <div class="card-body">
+          <h4 class="card-title"><strong> Nivel educativo:</strong></h4>
+          <p class="card-text"> Medio</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

@@ -24,8 +24,7 @@
 
 
 img{
-
-    width: 300px;
+    width: 220px;
     height: 200px;
     margin-bottom: 3%;
     border: solid 2px black;
@@ -45,7 +44,7 @@ h2{
     color: rgb(0, 0, 0);
 }
 
-button{
+/* button{
 
     margin-bottom: 2%;
     border-radius: 12%;
@@ -56,9 +55,18 @@ button{
     font-size: 0.7rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 
 button:hover{
-
-    background-color: orange;
+    background-color: rgb(9, 167, 199);
   }
+
+i{
+    font-size: 19px;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bi-arrow-left{
+    color: black;
+}
